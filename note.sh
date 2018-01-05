@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration options for NOTES!
-EDITOR="nvim"                                                                                                                                
+EDITOR="vim"                                                                                                                                
 AUTHOR="Joe Samela"                                                                                                                          
 NOTEPATH="$HOME/.note/archive/"
 
