@@ -31,7 +31,7 @@ FILEPATH="$NOTEPATH$FILENAME"
 
 # If TITLE contains "@" the search for tags 
 if [[ $TITLE == *"@"* ]]; then
-  eval 'grep -r --color=always "$HOME/.note/archive/" -e "$TITLE" | xargs -L1 basename'
+  eval 'grep -r -i --color=always "$HOME/.note/archive/" -e "$TITLE" | xargs -L1 basename'
   exit 1
 fi
 
