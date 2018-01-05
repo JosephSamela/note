@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # Configuration options for NOTES!
-EDITOR="vim"                                                                                                                                
-AUTHOR="Joe Samela"                                                                                                                          
-NOTEPATH="$HOME/.note/archive/"
+source "$HOME/.note/config.cfg"
 
 ########################################
 # Get date from system
