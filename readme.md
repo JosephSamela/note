@@ -57,6 +57,5 @@ $ bash install.sh
 $ note
 Enter title: Brilliant Idea
 ```
-
-
-
+NOTE is installed at `~/.note`.
+By default notes you create are stored at `~/.note/archive`.
