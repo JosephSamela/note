@@ -65,3 +65,9 @@ Enter title: Brilliant Idea
 NOTE is installed at `~/.note`.
 
 By default notes you create are stored at `~/.note/archive`.
+
+    Coming soon...
+    * Support for more cli editors! (nano, micro, etc.)
+    * Support for zsh! (currently requires additional "bash" command)
+    * Installer improvements (including building config)
+    * More powerful search (note title + text within notes)
