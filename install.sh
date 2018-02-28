@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 # Make ~/.note directory
 mkdir "$HOME/.note"
@@ -13,9 +13,15 @@ cp config.cfg "$HOME/.note"
 read -p "Enter author name: " AUTHOR
 echo AUTHOR="\"$AUTHOR\"" >> "$HOME/.note/config.cfg"
 
+read -p "Enter editor: " EDITOR
+echo EDITOR="\"$EDITOR\"" >> "$HOME/.note/config.cfg"
+
 # Add "note" command to .bashrc
 echo '# Alias note commmand' >> "$HOME/.bashrc"
 echo 'alias note="bash ~/.note/note.sh"' >> "$HOME/.bashrc"
+
+# Install complete!
+echo "Install complete! Type \"note\" to get started!"
 
 # reload .bashrc
 bash
