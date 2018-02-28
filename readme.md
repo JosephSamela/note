@@ -45,6 +45,11 @@ $ note @recipes
 guacamole.md:@recipes
 salsa.md:@recipes
 potatosalad.md:@recipes
+# Partial tag names work too!
+$ note @rec
+guacamole.md:@recipes
+salsa.md:@recipes
+potatosalad.md:@recipes
 ```
 
 **Sound cool?**
@@ -57,6 +62,12 @@ $ bash install.sh
 $ note
 Enter title: Brilliant Idea
 ```
+NOTE is installed at `~/.note`.
 
+By default notes you create are stored at `~/.note/archive`.
 
-
+    Coming soon...
+    * Support for more cli editors! (nano, micro, etc.)
+    * Support for zsh! (currently requires additional "bash" command)
+    * Installer improvements (including building config)
+    * More powerful search (note title + text within notes)
