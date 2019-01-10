@@ -10,7 +10,7 @@ DATE="$(date +%m-%d-%Y)"
 if (( $# == 0 )); then
   read -p "Enter title: " TITLE
 # If -r flag used, don't include flag in title name
-elif [[ $1 == *"-r"* ]];then
+elif [[ $1 == *"-"* ]];then
   TITLE="${*:2}"
 # Otherwise title is all args
 else
@@ -46,6 +46,13 @@ if [[ $1 == *"-r"* ]]; then
 	echo "Ok, nothing has been deleted"
   fi
   exit 1
+fi
+
+# list -l notes by title
+if [[ $1 == *"-l"* ]]; then
+  ls -t -1 $NOTEPATH
+  exit 1
+
 fi
 
 # If the note doesn't exist, make it
