@@ -32,6 +32,20 @@ If a note already exists, it's re-opened.
 $ note Existing Note Title
 ```
 
+**Search Notes**
+
+List all notes with `-l`. Title of all created notes listed, sorted by date. 
+```bash
+$ note -l
+```
+
+**Delete Notes**
+
+Delete note with `-d`. Once deleted - they're gone for good!
+```bash
+$ note -d Title of Note
+```
+
 **Using Tags**
 
 Add tags to note with the `@` symbol decorator - enter tags anywhere.
@@ -57,17 +71,10 @@ potatosalad.md:@recipes
 Want to try NOTE? Clone the repo and run the installer - done!
 ```bash
 # Run the included installer...
-$ bash install.sh
+$ sh install.sh
 # ...and start taking notes!
-$ note
-Enter title: Brilliant Idea
+$ note Brilliant Idea
 ```
-NOTE is installed at `~/.note`.
+NOTE is installed at `~/.note`. Configuration file is located at `~/.note/config.cfg`.`
 
-By default notes you create are stored at `~/.note/archive`.
-
-    Coming soon...
-    * Support for more cli editors! (nano, micro, etc.)
-    * Support for zsh! (currently requires additional "bash" command)
-    * Installer improvements (including building config)
-    * More powerful search (note title + text within notes)
+[New features coming soon...](https://github.com/JosephSamela/note/projects/1)
