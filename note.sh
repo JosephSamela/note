@@ -46,11 +46,11 @@ if [ ! -f "$FILEPATH" ]; then
     echo ""
     echo "---"
     echo "@$AUTHOR_TAG"
+    echo "@$TITLE"
+    echo "@$DATE"
     echo ""
   } > "$FILEPATH"
 fi 
 
 #Open note with editor
 eval "$EDITOR -c '6|startinsert' $FILEPATH"
-
-
