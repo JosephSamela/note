@@ -1,6 +1,6 @@
 # NOTE
 
-*NOTE - Simple & Fast note taking utility for the command line*
+*NOTE - Simple & Fast note taking utility for the command line* https://josephsamela.github.io/note/
 
 **The basics**
 
@@ -50,7 +50,7 @@ $ note -d Title of Note
 
 Add tags to note with the `@` symbol decorator - enter tags anywhere.
 
-`@Tag` `@Homework` `@todo` `@recipes` `@shopping` `@Travel_2018!`
+`@Tag` `@Homework` `@todo` `@recipes` `@shopping` `@Travel2018`
 
 Tags are a convient way of searching + organizing your notes. 
 ```bash
@@ -75,6 +75,6 @@ $ sh install.sh
 # ...and start taking notes!
 $ note Brilliant Idea
 ```
-NOTE is installed at `~/.note`. Configuration file is located at `~/.note/config.cfg`.`
+NOTE is installed at `~/.note`. Configuration file is located at `~/.note/config.cfg`.
 
 [New features coming soon...](https://github.com/JosephSamela/note/projects/1)
