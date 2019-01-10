@@ -3,16 +3,18 @@
 # Configuration options for NOTES!
 source "$HOME/.note/config.cfg"
 
-########################################
 # Get date from system
 DATE="$(date +%m-%d-%Y)"
-
-# Recieve args as title
-TITLE="$*"
 
 # If no title is given, prompt user for title
 if (( $# == 0 )); then
   read -p "Enter title: " TITLE
+# If -r flag used, don't include flag in title name
+elif [[ $1 == *"-r"* ]];then
+  TITLE="${*:2}"
+# Otherwise title is all args
+else
+  TITLE="$*"
 fi
 
 # Remove whitespace from AUTHOR
@@ -30,6 +32,19 @@ FILEPATH="$NOTEPATH$FILENAME"
 # If TITLE contains "@" the search for tags 
 if [[ $TITLE == *"@"* ]]; then
   eval 'grep -r -i --color=always "$NOTEPATH" -e "$TITLE" | xargs -L1 basename'
+  exit 1
+fi
+
+# remove -r from note title
+if [[ $1 == *"-r"* ]]; then
+  read -p "Delete $FILEPATH - Are you sure? (y/n): " RESULT
+  if [[ $RESULT == "y" ]]; then
+	  eval "rm $FILEPATH"
+	  echo "$FILEPATH has been deleted"
+	  exit 1
+  else
+	echo "Ok, nothing has been deleted"
+  fi
   exit 1
 fi
 
