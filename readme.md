@@ -2,6 +2,8 @@
 
 *NOTE - Simple & Fast note taking utility for the command line*
 
+I’m a simple man. When I get thoughts, I write them down. I don’t open another tab, enter incognito mode, log into my personal account then create a new note that get’s synced throughout all time and space. Hell, I don’t even leave the terminal. I just type `note` and start writing. `note` is a Simple & Fast note taking utility for the command line. Use the lightning-quick cli text editor you love and let `note` organize all your notes in the background.
+
 **The basics**
 
 Open a terminal and type `note`. Easy!
