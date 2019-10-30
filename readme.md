@@ -7,7 +7,7 @@ I’m a simple man. When I get thoughts, I write them down. I don’t open anoth
 **The basics**
 
 Open a terminal and type `note`. Easy!
-```bash
+```
 # Type "note" and be prompted for title
 $ note
 Enter title: Hello World
@@ -30,21 +30,21 @@ This is an example note! Syntax is markdown, go nuts!
 **No Repeated Notes**
 
 If a note already exists, it's re-opened.
-```bash
+```
 $ note Existing Note Title
 ```
 
 **Search Notes**
 
 List all notes with `-l`. Title of all created notes listed, sorted by date. 
-```bash
+```
 $ note -l
 ```
 
 **Delete Notes**
 
 Delete note with `-d`. Once deleted - they're gone for good!
-```bash
+```
 $ note -d Title of Note
 ```
 
@@ -55,7 +55,7 @@ Add tags to note with the `@` symbol decorator - enter tags anywhere.
 `@Tag` `@Homework` `@todo` `@recipes` `@shopping` `@Travel2018`
 
 Tags are a convient way of searching + organizing your notes. 
-```bash
+```
 # Search your notes for tags with the @ decorator.
 $ note @recipes
 guacamole.md:@recipes
@@ -71,7 +71,7 @@ potatosalad.md:@recipes
 **Sound cool?**
 
 Want to try NOTE? Clone the repo and run the installer - done!
-```bash
+```
 # Run the included installer...
 $ sh install.sh
 # ...and start taking notes!
