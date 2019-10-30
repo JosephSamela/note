@@ -1,6 +1,6 @@
 # NOTE
 
-*NOTE - Simple & Fast note taking utility for the command line* https://josephsamela.github.io/note/
+*NOTE - Simple & Fast note taking utility for the command line*
 
 **The basics**
 
